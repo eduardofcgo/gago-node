@@ -2,4 +2,4 @@
 
 label=$1
 
-./list.sh | grep $label | awk -F ' | ' '{print $2}'
+./list.sh --no-headers --text --format 'id,label' | grep $label | awk -F ' ' '{print $1}'
