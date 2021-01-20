@@ -1,3 +1,3 @@
 #!/bin/bash
 
-linode-cli linodes list --format 'id,label,group,status,ipv4' "$@"
+linode-cli linodes list --text --format 'id,label,group,status,ipv4' "$@"
